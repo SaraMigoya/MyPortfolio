@@ -1,0 +1,105 @@
+@import '../../styles/settings';
+@import '../../styles/mixins';
+
+.aptitudes-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px;
+}
+.underline{
+    @include underline;
+
+} 
+.aptitudes-title {
+    @include titlesMobile;
+    margin-top: 10%;
+}
+.express {
+    width: 88px;
+    height: 62px; 
+}
+
+.aptitudes-container .aptitudes-icons i{
+    font-size: 50px;
+    display: flex;
+}
+
+.aptitudes-container .aptitudes-icons {
+    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    grid-template-columns: repeat(2,1fr); 
+    gap: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.html{
+    color: orange;
+}
+.css{
+    color: lightblue;
+}
+.sass {
+    color: pink;
+}
+.js{
+    color: yellow;
+}
+
+.react{
+    color: lightblue;
+}
+
+.git{
+    color: orange;
+}
+.node{
+    color: green;
+}
+
+
+.scrolling{
+    animation: fadeIn 1s forwards 0s ease; 
+}
+@media only screen and (min-width: 769px) {
+    .aptitudes-title {
+
+        margin-top: 10%;
+    }
+    
+    .aptitudes-container .aptitudes-icons {
+         width: 32%;
+    }
+    .aptitudes-container .aptitudes-icons i{
+        font-size: 76px;
+
+    }
+    .aptitudes-container .aptitudes-icons i:hover{
+        font-size: 80px;
+
+    }
+    .express:hover {
+        width: 98px;
+        height: 62px; 
+    }
+    .underline{
+      @include underlineDesktop;
+    
+    }
+}
+
+@keyframes fadeIn{
+    0% {
+        transform: scale(.8) translateX(-150px);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1) translateX(0);
+        opacity: 1;
+    }
+}

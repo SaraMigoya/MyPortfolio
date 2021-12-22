@@ -1,0 +1,12 @@
+// Fonts size
+$fz-200: clamp(12px, 1vw, 14px);
+$fz-300: clamp(14px, 1.3vw, 18px);
+$fz-400: clamp(16px, 1.6vw, 20px);
+$fz-600: clamp(20px, 2.6vw, 30px);
+$fz-700: clamp(26px, 3vw, 38px);
+$fz-800: clamp(30px, 3.5vw, 45px);
+
+//Color
+$color-primary: -webkit-linear-gradient(0deg,#5f3be9 0%, #baacf3 100%);
+$color-secundary: #45B39D;
+$color-white: white;

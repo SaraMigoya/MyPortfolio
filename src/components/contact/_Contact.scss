@@ -1,0 +1,89 @@
+
+@import '../../styles/settings';
+@import '../../styles/mixins';
+
+.contact-container{
+    background: $color-primary;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    justify-content: center;
+    width: 90%;
+}
+
+.label, .title-contact{
+    color: $color-white;
+
+}
+.label{
+    font-weight: bold;
+    width: 60%;
+
+}
+
+.title-contact{
+    font-size: $fz-700;
+    font-weight: 300;
+    line-height: 34px;
+    width: 100%;
+    text-align: center;
+}
+.input{
+    background: inherit;
+    border:none;
+    outline: none;
+    width: 60%;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 5rem;
+    color: $color-white;
+
+    
+}
+
+
+.underline-contact{
+    border: 1px solid $color-white;
+    width: 120px;
+    margin-bottom: 28px;
+    margin-top: 10px;
+}
+.textarea{
+    display: inline-block;
+    max-width: 60%;
+    min-width: 60%;
+    min-height: 7rem;
+    margin-top: 0.5rem;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    background: rgba(0,0,0,.4);
+    padding: 0.5rem;
+    color: #fff;
+}
+
+.contact-botton {
+    padding: 10px 30px;
+    border-radius: 3px;
+    border: none;
+    background: #1c1d22;
+    color: #fff;
+    font-size: clamp(16px,1.6vw,20px);
+    letter-spacing: 2.5px;
+    cursor: pointer;
+    margin-top: 4rem;
+}
+
+.contact-botton:hover{
+    background: $color-white;
+    color: black;
+
+}

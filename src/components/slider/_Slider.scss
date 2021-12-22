@@ -1,0 +1,78 @@
+@import '../../styles/settings';
+@import '../../styles/mixins';
+
+.carousel-container {
+    display: flex;
+    vertical-align: center;
+    align-items: center;
+    background-color: $color-white;
+    flex-direction: column;
+    margin-bottom: 70px;
+  }
+  
+  .carousel-title {
+    @include titlesMobile;
+    width: 100%;
+    text-align: center
+  }
+  
+  .slide-container {
+    height: 80%;
+    border-radius: 40px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+  }
+  .slider-container-general {
+    width: 70%;
+  }
+  .slide-container > img {
+    object-fit: contain;
+    transition: all 0.2s ease-in-out;
+
+  }
+  .slide-img{
+    width: 100%
+  }
+  .slide-container:hover > img {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+  
+  .slide-desc {
+    background-color: black;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    padding-left: 30px;
+    border-top-left-radius: 20px;
+    opacity: 0.8;
+  }
+  
+  .slide-desc > span {
+    color: white;
+    display: block;
+    font-size: 14px;
+    padding: 5px;
+  }
+  
+  .BrainhubCarousel__arrows {
+    background-color: white;
+    border-radius: 50%;
+    margin: 20px;
+  }
+  
+  .BrainhubCarousel__arrows > span {
+    border-color: black;
+  }
+
+
+  @media only screen and (min-width: 769px){
+
+    .underline{
+        @include underlineDesktop;
+
+        
+        }
+    }

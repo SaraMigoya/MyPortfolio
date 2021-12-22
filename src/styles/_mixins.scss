@@ -1,0 +1,17 @@
+@mixin titlesMobile {
+    font-size:$fz-700;
+    font-weight: 300;
+    line-height: 34px;
+}
+
+@mixin underline {
+    border: 1px solid $color-secundary;
+    width: 57px;
+    margin-bottom: 28px;
+}
+@mixin underlineDesktop {
+    border: 1px solid $color-secundary;
+    width: 120px;
+    margin-bottom: 28px;
+    margin-top: 10px;
+}

@@ -1,0 +1,61 @@
+
+@import '../../styles/settings';
+@import '../../styles/mixins';
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 26%;
+     
+}
+.scrolling{
+    animation: fadeIn 1s forwards 0s ease; 
+}
+.about-p, .about-title {
+    line-height: 34px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.about-title {
+    font-size:$fz-700;
+}
+.underline{
+@include underline;
+}
+
+
+@media only screen and (min-width: 769px){
+
+.underline {
+ @include underlineDesktop;
+    }
+    .about-container {
+
+        margin-bottom: 0;
+    }
+    .about-p {
+        font-size: $fz-400;
+        padding: 2% 20% 2% 20%;
+    }
+    .underline{
+        @include underlineDesktop;
+      
+      }
+}
+
+  
+@keyframes fadeIn{
+    0% {
+        transform: scale(.8) translateX(-150px);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1) translateX(0);
+        opacity: 1;
+    }
+}

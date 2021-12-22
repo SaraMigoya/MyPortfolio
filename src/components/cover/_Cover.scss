@@ -1,0 +1,100 @@
+
+@import '../../styles/settings';
+
+  .cover-container{
+    display: flex;
+    justify-content: space-between;
+    height: 50vh;  
+  }
+  .cover-container > div {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    padding: 17px;
+  }
+  
+  .name {
+    letter-spacing: 1px;
+    margin: 0;
+    background: $color-primary;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+    font-size: $fz-800;
+    opacity: 0;
+    animation: fadeIn 1s forwards 0s ease;   
+
+      }
+
+  
+  .ocupation {
+    margin: 0;
+    color: black;
+    font-size: $fz-700;
+    font-weight: 400;
+    line-height: 24px;
+    opacity: 0;
+    animation: fadeIn 1s forwards .5s ease;   
+  }
+  .sentence{
+    display: none;
+  }
+
+  .cover-img{
+    width: 61%;
+
+  } 
+
+
+  
+  @keyframes fadeIn{
+    0% {
+        transform: scale(.8) translateX(-150px);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1) translateX(0);
+        opacity: 1;
+    }
+}
+ @media only screen and (min-width: 769px) {
+  .cover-container{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;  
+    margin-bottom: 10%;
+  }
+
+  .name {
+    margin-bottom: 30px;
+
+  }
+  .ocupation {
+    margin-bottom: 30px;
+    line-height: inherit;
+
+  }
+  .sentence{
+    display: inline;
+    font-size: $fz-400;
+    font-style: italic;
+    opacity: 0;
+  animation: fadeIn 1s forwards .8s ease;   
+  }
+  .cover-container > div {
+    padding: 64px;
+
+  }
+  }     
+
+  .navbar-icons a {
+    color: $color-secundary;
+  }
+    .navbar-icons{
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 15px;
+    }
+    .fab {
+      display: inline;
+    } 
